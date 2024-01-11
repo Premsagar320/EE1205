@@ -57,56 +57,47 @@
 \textbf{Question}:\\ The 5th,8th and 11th terms of a GP are p,q and s respectively .show that \[q^2=ps\]
 \textbf{solution}:
 \\Given,
-\\$a_5=p$
-\\$a_8=q$
-\\$a_{11}=s$
+\begin{align}
+x(5)=p
+\\x(8)=q
+\\x({11})=s
+\end{align}
 \\let first term of a GP= a\\
 common ratio of GP=r
 \\we know,
-\\ nth term of  a $GP(a_n)$$= a\cdot r^{n-1}$ 
-\\so 5th  term of $GP(a_5)$$= a\cdot r^4=p$
-\\8th  term  of  $GP(a_8)$$= a\cdot r^7=q$
-\\11th  term  of  $GP(a_{11})$$= a\cdot r^{10}=s$
-\\$a_8\cdot a_8=a\cdot r^7\cdot a\cdot r^7$
-    \\$=a^2\cdot r^{14}$
-\\$a_5\cdot a_{11}=a\cdot r^4\cdot a\cdot r^{10}$
-     \\ $=a^2\cdot r^{14}$
-\\$a_8^2=a_5\cdot a_{11}$
-\\therefore,
-\\$q^2=p\cdot s$
-\\hence proved
-\\$q^2=p\cdot s$
-\\$\\\begin{tabular}{|c|c| }
-\hline
-\textbf{n}& \textbf{value}
-\\\hline
-\multirow{3}{1em}\\1 &$a$
-\\2 &$a\cdot r$
- \\3 &$a\cdot r^2$ 
- \\4 &$a\cdot r^3$ 
- \\5 &$a\cdot r^4$
- \\6 &$a\cdot r^5$
- \\7 &$a\cdot r^6$
- \\8 &$a\cdot r^7$
- \\9 &$a\cdot r^8$
- \\{10} &$a\cdot r^9$
- \\{11} &$a\cdot r^{10}$
-  \\\hline
-\end{tabular}$\\
-\\$\\\begin{tabular}{|c|c| }
-\hline
-\textbf{term}& \textbf{value}
-\\\hline
-\multirow{3}{1em}\\$a_5$ &$p$
-\\$a_8$ &$q$
-\\$a_{11}$ &$s$
-  \\\hline
-\end{tabular}$\\
+\begin{align}
+\text{nth term of  a GP}=x(n)&= a\cdot r^{n-1}, \text{if} n \geq 0
+\\\text{so 5th  term of GP}(x(5))&=a\cdot r^4=p
+\\\text{8th  term  of  GP}(x(8))&=a\cdot r^7=q
+\\\text{11th  term  of  GP}(x({11}))&=a\cdot r^{10}=s
+\\x(8)\cdot x(8)=a\cdot r^7\cdot a\cdot r^7
+     \\ =a^2\cdot r^{14}
+\\x(5)\cdot x({11})=a\cdot r^4\cdot a\cdot r^{10}
+       \\=a^2\cdot r^{14}
+\\x(8)^2=x(5)\cdot x({11})
+\end{align}
 \\so,
-\\$p=a\cdot r^4$
-\\$q=a\cdot r^7$
-\\$s=a\cdot r^{10}$
+\begin{align}
+p=a\cdot r^4
+\\q=a\cdot r^7
+\\s=a\cdot r^{10}
+\\q^2=p\cdot s
+\end{align}
 \\hence proved
-\\$q^2=p\cdot s$
+\\\\\begin{tabular}{|c|c|c|}
+\hline
+\textbf{symbol}& \textbf{value}& \textbf{description}
+\\\hline
+\multirow{10}{1em}
+\\$x(5)$ &$a\cdot r^4=p$& 5th term of GP 
+\\$x(8)$ &$a\cdot r^7=q$& 8th term of GP 
+\\$x({11})$ &$a\cdot r^{10}=s$& 11th term of GP
+\\\hline
+\end{tabular}\\
+\\\\$u(n)=\begin{cases} 1,& \text{if} n\geq 0 \\\ 0,& \text{otherwise} \end{cases}$
+\\\\\\\begin{align}x(n)=a\cdot r^{n-1}\cdot u(n)\end{align}
+from equation(18)
+\\\\$x(n)=\begin{cases} a\cdot r^{n-1} \cdot u(n),&\text{if} n \geq 0\\\ 0,& \text{otherwise}
+\end{cases}$
 \end{document}
 
