@@ -19,6 +19,6 @@ x_n_values = [calculate_x_n(a_value, r_value, n) for n in n_values]
 plt.stem(n_values, x_n_values, basefmt="b-", linefmt="b-", markerfmt="bo")
 plt.xlabel('n')
 plt.ylabel('X(n)')
-plt.title(' X(n) = a.r^n')
+plt.title(' X(n) = ar^n')
 plt.savefig('geometric_sequence_plot.png')
 plt.show()
