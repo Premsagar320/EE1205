@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.7)  16 JAN 2024 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.7)  18 JAN 2024 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,54 +1278,27 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 72--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--86
-
- []
-
-<geometric_sequence_plot.png, id=7, 462.528pt x 346.896pt>
-File: geometric_sequence_plot.png Graphic file (type png)
-<use geometric_sequence_plot.png>
-Package pdftex.def Info: geometric_sequence_plot.png  used on input line 92.
+(./tables/tables.tex)
+</root/assign1/figs/figure__plot.png, id=7, 462.528pt x 346.896pt>
+File: /root/assign1/figs/figure__plot.png Graphic file (type png)
+<use /root/assign1/figs/figure__plot.png>
+Package pdftex.def Info: /root/assign1/figs/figure__plot.png  used on input lin
+e 79.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--96
+Underfull \hbox (badness 10000) in paragraph at lines 70--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--96
+Underfull \hbox (badness 10000) in paragraph at lines 70--83
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./geometric_sequence_plot.png>] (./assign1.aux)
+ </root/assign1/figs/figure__plot.png>] (./assign1.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1333,24 +1306,25 @@ Package rerunfilecheck Info: File `assign1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30352 strings out of 476091
- 597831 string characters out of 5794082
- 1875330 words of memory out of 5000000
- 50064 multiletter control sequences out of 15000+600000
- 570852 words of font info for 147 fonts, out of 8000000 for 9000
+ 30390 strings out of 476091
+ 598342 string characters out of 5794082
+ 1872330 words of memory out of 5000000
+ 50089 multiletter control sequences out of 15000+600000
+ 580736 words of font info for 173 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,1175b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign1.pdf (1 page, 56948 bytes).
+1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on assign1.pdf (1 page, 60125 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

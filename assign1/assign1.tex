@@ -56,45 +56,34 @@
 \renewcommand{\thetable}{\theenumi}
 \textbf{Question}:\\ The 5th,8th and 11th terms of a GP are p,q and s respectively .show that \[q^2=ps\]
 \textbf{solution}:
-\\first term of a GP= x(0)\\
-common ratio of GP=r
 \begin{align}
 x(n)&= x(0)\,r^{n}, \text{if} n \geq 0
-\\x(5)&=x(0)\,r^5
-\\x(8)&=x(0)\,r^8
-\\x({11})&=x(0)\,r^{11}
-\\x(8)\,x(8)=x(0)\,r^8\,x(0)\,r^8
+\\x(4)&=x(0)\,r^5
+\\x(7)&=x(0)\,r^8
+\\x({10})&=x(0)\,r^{11}
+\\x(7)\,x(7)=x(0)\,r^8\,x(0)\,r^8
      \\ =x(0)^2\,r^{16}
-\\x(5)\,x({11})=x(0)\,r^5\,x(0)\,r^{11}
+\\x(4)\,x({10})=x(0)\,r^5\,x(0)\,r^{11}
        \\=x(0)^2\,r^{16}
-\\x(8)^2=x(5)\,x({11})
+\\x(7)^2=x(4)\,x({10})
 \\q^2=ps
 \end{align}
-\\\begin{tabular}{|c|c|c|}
-\hline
-\textbf{symbol}& \textbf{value}& \textbf{description}
-\\\hline
-\multirow{10}{1em}
-\\$x(5)$ &$p$& 5th term of GP 
-\\\hline
-$x(8)$ &$q$& 8th term of GP
-\\\hline
-$x({11})$ &$s$& 11th term of GP
-\\\hline
-\end{tabular}\\
-\\\\$u(n)=\begin{cases} 1,& \text{if}\, n\geq 0 \\\ 0,& \text{otherwise} \end{cases}$
-\\\\\\\begin{align}x(n)=x(0)\,r^{n}\,u(n)\end{align}
-from (10)
-\\\\$x(n)=\begin{cases} x(0)\,r^{n} &\text{if}\, n \geq 0\\\ 0,& \text{otherwise}
-\end{cases}$
-\begin{figure}
+\begin{table}[!ht]
+   \centering
+      \input{tables/tables.tex}
+    \caption{input parameters}
+    \label{tab:11.9.3}
+ \end{table}    
+\\\begin{figure}
     \centering
-	\includegraphics[width=1\linewidth]{geometric_sequence_plot.png}
+    \includegraphics[width=1\linewidth]{/root/assign1/figs/figure__plot.png}
     \caption{plot x(n) vs n}
     \label{fig:enter-label}
-\end{figure}
-\\\\\begin{align}x(n)\overset{Z}{\longleftrightarrow}   X(Z)
+\end{figure}\\
+\\\begin{align}
+\\x(n)\overset{Z}{\longleftrightarrow}   X(Z)
+\\x(n)=x(0)\,r^n\,u(n)
 \\X(Z)&=\sum_{n=-\infty}^{\infty}x(n) Z^{-n}\
      \\ &= \frac{x(0)}{1-r\,z^{-1}}\: \:,|z|>|r| \end{align}   
 \end{document}
-
+	

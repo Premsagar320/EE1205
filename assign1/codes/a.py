@@ -16,9 +16,9 @@ n_values = np.arange(0, 10, 1)
 x_n_values = [calculate_x_n(a_value, r_value, n) for n in n_values]
 
 # Plotting
-plt.stem(n_values, x_n_values, basefmt="b-", linefmt="b-", markerfmt="bo")
+plt.stem(n_values, x_n_values, basefmt="b-")
 plt.xlabel('n')
 plt.ylabel('X(n)')
-plt.title(' X(n) = ar^n')
-plt.savefig('geometric_sequence_plot.png')
+plt.title('X(n) = ar^n')
+plt.savefig('figure__plot.png')
 plt.show()
