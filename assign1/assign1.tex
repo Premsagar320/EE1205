@@ -55,25 +55,25 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \textbf{Question}:\\ The 5th,8th and 11th terms of a GP are p,q and s respectively .show that \[q^2=ps\]
-\textbf{solution}:
-\begin{align}
-x(n)&= x(0)\,r^{n}, \text{if} n \geq 0
-\\x(4)&=x(0)\,r^5
-\\x(7)&=x(0)\,r^8
-\\x({10})&=x(0)\,r^{11}
-\\x(7)\,x(7)=x(0)\,r^8\,x(0)\,r^8
-     \\ =x(0)^2\,r^{16}
-\\x(4)\,x({10})=x(0)\,r^5\,x(0)\,r^{11}
-       \\=x(0)^2\,r^{16}
-\\x(7)^2=x(4)\,x({10})
-\\q^2=ps
-\end{align}
+\textbf{solution}
 \begin{table}[!ht]
    \centering
       \input{tables/tables.tex}
     \caption{input parameters}
     \label{tab:11.9.3}
- \end{table}    
+ \end{table}
+\\\begin{align}
+x(n)&= x(0)\,r^{n}
+\\x(5)&=x(0)\,r^5
+\\x(8)&=x(0)\,r^8
+\\x({11})&=x(0)\,r^{11}
+\\x(8)\,x(8)=x(0)\,r^8\,x(0)\,r^8
+     \\ =x(0)^2\,r^{16}
+\\x(5)\,x({11})=x(0)\,r^5\,x(0)\,r^{11}
+       \\=x(0)^2\,r^{16}
+\\x(8)^2=x(5)\,x({11})
+\\q^2=ps
+\end{align} 
 \\\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{/root/assign1/figs/figure__plot.png}
@@ -86,4 +86,3 @@ x(n)&= x(0)\,r^{n}, \text{if} n \geq 0
 \\X(Z)&=\sum_{n=-\infty}^{\infty}x(n) Z^{-n}\
      \\ &= \frac{x(0)}{1-r\,z^{-1}}\: \:,|z|>|r| \end{align}   
 \end{document}
-	
