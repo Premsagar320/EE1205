@@ -1,24 +1,22 @@
-import numpy as np
 import matplotlib.pyplot as plt
 
-# Function to calculate X(n)
-def calculate_x_n(a, r, n):
-    return a * (r ** n) if n >= 0 else 0
+# Lists to store data
+n_values = []
+x_values = []
 
-# Values for a and r
-a_value = 2
-r_value = 0.5
-
-# Generate values for n
-n_values = np.arange(0, 10, 1)
-
-# Calculate X(n) for each n
-x_n_values = [calculate_x_n(a_value, r_value, n) for n in n_values]
+# Read data from the file
+with open("output_data.txt", "r") as file:
+    next(file)  # skip the header line
+    for line in file:
+        n, x = map(float, line.split())
+        n_values.append(int(n))
+        x_values.append(x)
 
 # Plotting
-plt.stem(n_values, x_n_values, basefmt="b-")
+plt.plot(n_values, x_values, marker='o', linestyle='-')
+plt.title('x(n) vs n')
 plt.xlabel('n')
-plt.ylabel('X(n)')
-plt.title('X(n) = ar^n')
+plt.ylabel('x(n)')
+plt.grid(True)
 plt.savefig('figure__plot.png')
 plt.show()
