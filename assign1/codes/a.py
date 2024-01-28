@@ -17,6 +17,7 @@ plt.plot(n_values, x_values, marker='o', linestyle='-')
 plt.title('x(n) vs n')
 plt.xlabel('n')
 plt.ylabel('x(n)')
+plt.xticks(range(-10, 11))  # Set x-axis ticks for values from -10 to 10
 plt.grid(True)
 plt.savefig('figure__plot.png')
 plt.show()
