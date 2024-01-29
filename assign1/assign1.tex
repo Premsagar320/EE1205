@@ -58,32 +58,33 @@
 \textbf{solution}:
 \\\begin{table}[!ht]
    \centering
+    \renewcommand\thetable{1}
       \input{tables/tables.tex}
     \caption{input parameters}
-    \label{tab:11.9.3}
+    \label{tab:table_11.9.3}
  \end{table}
+\\ From \tabref{tab:table_11.9.3}:
 \begin{align}
-x(n)&= x(0)\,r^{n}
-\\x(5)&=x(0)\,r^5
-\\x(8)&=x(0)\,r^8
-\\x({11})&=x(0)\,r^{11}
-\\x(8)\,x(8)&=x(0)\,r^8\,x(0)\,r^8
-     \\ &=x(0)^2\,r^{16}
-\\x(5)\,x({11})&=x(0)\,r^5\,x(0)\,r^{11}
-       \\&=x(0)^2\,r^{16}
-\\x(8)^2&=x(5)\,x({11})
+\\x\brak{8}\,x\brak{8}&=x\brak{0}\,r^8\,x\brak{0}\,r^8
+     \\ &=x\brak{0}^2\,r^{16}
+\\x\brak{5}\,x\brak{{11}}&=x\brak{0}\,r^5\,x(0)\,r^{11}
+       \\&=x\brak{0}^2\,r^{16}
+\\x\brak{8}^2&=x\brak{5}\,x\brak{{11}}
 \\q^2&=ps
 \end{align}   
-\\\begin{figure}
+\\\begin{figure}[h]
+   \renewcommand\thefigure{1}
     \centering
     \includegraphics[width=1\linewidth]{/root/assign1/figs/figure__plot.png}
-    \caption{plot x(n) vs n}
+    \caption{plot x\brak{n}vs n\hspace{0.1cm}p=486,
+    \hspace{0.1cm}q=13122,
+    \hspace{0.1cm}s=118098}
     \label{fig:1}
 \end{figure}\\
 \\\begin{align}
-x(n)\overset{Z}{\longleftrightarrow}   X(Z)
-\\x(n)&=x(0)\,r^n\,u(n)
-\\X(Z)&=\sum_{n=-\infty}^{\infty}x(n) Z^{-n}\
-     \\ &= \frac{x(0)}{1-r\,z^{-1}}\: \:,|z|>|r|
+x\brak{n}\overset{Z}{\longleftrightarrow}   X\brak{Z}
+\\x\brak{n}&=x\brak{0}\,r^n\,u\brak{n}
+\\X\brak{Z}&=\sum_{n=-\infty}^{\infty}x\brak{n} Z^{-n}\
+     \\ &= \frac{x\brak{0}}{1-r\,z^{-1}}\: \:,|z|>|r|
      \end{align}
 \end{document}
