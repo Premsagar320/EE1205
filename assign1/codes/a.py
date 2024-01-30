@@ -13,7 +13,7 @@ with open("output_data.txt", "r") as file:
         x_values.append(x)
 
 # Plotting
-plt.plot(n_values, x_values, marker='o', linestyle='-')
+plt.stem(n_values, x_values, markerfmt='o', linefmt='-',basefmt='-')
 plt.title('x(n) vs n')
 plt.xlabel('n')
 plt.ylabel('x(n)')
