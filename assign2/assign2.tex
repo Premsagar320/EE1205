@@ -54,8 +54,8 @@
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\textbf{Question}:\\ 200 logs are stacked in the following manner .20 logs in the bottom row ,19 in the next row ,18 in the row next to it and so on(see Fig 5.5).In how many rows are the 200 legs placed and how many logs are in the top row.
-\\\textbf{Solution}:
+\textbf{Question}:\\ 200 logs are stacked in the following manner .20 logs in the bottom row ,19 in the next row ,18 in the row next to it and so on(see Fig 5.5).In how many rows are the 200 logs placed and how many logs are in the top row.
+\\\\\textbf{Solution}:
 \begin{table}[!ht]
   \centering
   \renewcommand\thetable{1}
@@ -65,9 +65,27 @@
   \end{table}
   \\From \tabref{tab:10.5.3.19}:
 \begin{align}
-200&=\frac{n}{2}\brak{20+1}
-\\n&=\frac{400}{21}
-  \\ &=19.05 
+200&=\frac{n+1}{2}\brak{20+20-n}
+\\n&=24 \brak{\text{or}} 15
 \end{align}
-so 20 rows are needed.
+for n=24
+\begin{align}
+x\brak{24}&=20-24
+\\&={-4}
+\end{align}
+but logs cannot be negative
+\\for n=15
+\begin{align}
+x\brak{15}&=20-15
+\\&=5
+\end{align}
+so 5 logs are there on top row
+\\ 15 rows are needed.
+\\\begin{figure}[h]
+  \renewcommand\thefigure{1}
+    \centering
+    \includegraphics[width=1\linewidth]{/root/assign2/figs/figure_plot.png}
+    \caption{plot of y\brak{n} v/s n}
+    \label{fig:enter-label}
+\end{figure}
 \end{document}
