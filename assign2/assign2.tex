@@ -64,11 +64,7 @@
   \label{tab:10.5.3.19}
   \end{table}
   \\From \tabref{tab:10.5.3.19}:
-\begin{align}
-x\brak{15}&=20-15
-\\&=5
-\end{align}
-\\Applying Z transform:
+  \\Applying Z transform:
 \begin{align}
 \implies X\brak{Z}&=\frac{20}{1-z^{-1}}-\frac{z^{-1}}{\brak{1-z^{-1}}^2}\,,\abs{z}>1
 \\y\brak{n}&=x\brak{n}*u\brak{n}
@@ -77,16 +73,20 @@ x\brak{15}&=20-15
 \end{align}
 \\\\Using contour integration to find  inverse Z transformation
 \\\begin{align}
-\implies y\brak{n}&=\frac{1}{2\pi j}\oint_{C}Y\brak{Z    }\,z^{n-1}\,dz
+ y\brak{n}&=\frac{1}{2\pi j}\oint_{C}Y\brak{Z    }\,z^{n-1}\,dz
 \\&=\frac{1}{2\pi j}\oint_{C}\brak{\frac{20}{\brak{1-z^{-1}}^2}-\frac{z^{-1}}{\brak{1-z^{-1}}^3}}z^{n-1}dz
 \end{align}
 we can observe only that there is only a 3 times repeated pole at z=1,
 \begin{align}
-\implies R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}
+ y\brak{n}&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}
 \\&=\frac{1}{\brak{2}!}\lim\limits_{z\to1}\frac{d^{2}}{dz^{2}}\brak{\brak{z-1}^3\frac{\brak{20z^{n+2}-21z^{n+1}}}{\brak{z-1}^3}}
 \\&=\frac{1}{\brak{2}!}\lim\limits_{z\to1}\frac{d^{2}}{dz^{2}}\brak{20z^{n+2}-21z^{n+1}}
-\\200&=\frac{\brak{n+1}\brak{40-n}}{2}
-\\n&=24\brak{\text{or}}15
+\\&=\frac{\brak{n+1}\brak{40-n}}{2}
+\end{align}
+since number of logs=200
+\begin{align}
+ 200&=\frac{\brak{n+1}\brak{40-n}}{2}   
+\\n&=24,15
 \end{align}
 \\for n=24
 \begin{align}
