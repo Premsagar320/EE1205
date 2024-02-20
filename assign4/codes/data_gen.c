@@ -5,7 +5,7 @@
 double x(double t) {
     double period = 100.0;  // Fundamental period of x(t) in seconds
     double normalized_t = fmod(t, period);  // Normalize t within one period
-    return normalized_t * normalized_t;  // Example function: t^2
+    return sin(2 * M_PI * normalized_t / period);  // Corrected sine function
 }
 
 int main() {
@@ -36,4 +36,3 @@ int main() {
 
     return 0;
 }
- 
