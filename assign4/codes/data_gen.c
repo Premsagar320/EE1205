@@ -1,11 +1,14 @@
 #include <stdio.h>
-#include <math.h>  // Include math.h for fmod function
+#include <math.h>
 
 // Define the function x(t) with a fundamental period of 100 seconds
 double x(double t) {
-    double period = 100.0;  // Fundamental period of x(t) in seconds
-    double normalized_t = fmod(t, period);  // Normalize t within one period
-    return sin(2 * M_PI * t / 100);  // Example function: sin(2πt/100)
+    return sin(2 * M_PI * t / 100);
+}
+
+// Define the function y(t) = x(4t)
+double y(double t) {
+    return x(4 * t);
 }
 
 int main() {
@@ -21,18 +24,18 @@ int main() {
     fprintf(file, "t  x(t)   y(t)\n");
 
     // Given values
-    double t, x_t, y_t;  // Values of t, x(t), and y(t)
+    double t, x_t, y_t;
 
-    // Generate values for t to cover the range from 0 to 100 (inclusive) with a step of 5
-    for (t = 0; t <= 100; t += 5) {
+    // Generate values for t from 0 to 100 with a step of 0.1
+    for (t = 0; t <= 100; t += 4) {
         // Calculate x(t)
         x_t = x(t);
 
         // Calculate y(t) = x(4t)
-        y_t = x(4 * t);
+        y_t = y(t);
 
         // Write to file
-        fprintf(file, "%.2lf  %.2lf %.2lf\n", t, x_t, y_t);
+        fprintf(file, "%.2lf  %.6lf %.6lf\n", t, x_t, y_t);
     }
 
     fclose(file);
