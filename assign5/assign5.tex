@@ -69,23 +69,17 @@
     \caption{input parameters}
     \label{tab:IN 14}
  \end{table}
-\\ From \tabref{tab:IN 14}
+ \\From \tabref{tab:IN 14}
 \\\begin{align}
-ax_1\brak{t}+bx_2\brak{t}&\leftrightarrow ay_1\brak{t}+by_2\brak{t}
-\end{align}
-Applying Fourier transform:
-\begin{align}
-\mathcal{F}\brak{y_1\brak{t}}&=\mathcal{F}\brak{x_1\brak{t}sin\brak{2\pi t}}
-\\Y_1\brak{f}&=X_1\brak{f}*\frac{1}{2j}[\delta(f+1)-\delta(f-1)]
-\\\mathcal{F}\brak{y_2\brak{t}}&=\mathcal{F}\brak{x_2\brak{t}sin\brak{2\pi t}}
-\\Y_2\brak{f}&=X_2\brak{f}*\frac{1}{2j}[\delta(f+1)-\delta(f-1)]
-\\aY_1\brak{f}+bY_2\brak{f}&=aX_1\brak{f}*\frac{1}{2j}[\delta\brak{f+1}-\delta\brak{f-1}]+bX_2\brak{f}*\frac{1}{2j}[\delta\brak{f+1}-\delta\brak{f-1}]
+y_1\brak{t}&\leftrightarrow x_1\brak{t}
+\\y_2\brak{t}&\leftrightarrow x_2\brak{t}
+\\ay_1\brak{t}+by_2\brak{t}&\leftrightarrow ax_1\brak{t}+bx_2\brak{t}
+\\ay_1\brak{t}+by_2\brak{t}&=\brak{ax_1\brak{t}+bx_2\brak{t}}sin\brak{2\pi t}
 \end{align}
 \\$\therefore$ satisfies principle of superposition
 \begin{align}
 ky\brak{t}&\leftrightarrow kx\brak{t}
-\\\mathcal{F}\brak{y_1\brak{t}}&=\mathcal{F}\brak{x_1\brak{t}sin\brak{2\pi t}}
-\\kY_1\brak{f}&=kX_1\brak{f}*\frac{1}{2j}[\delta(f+1)-\delta(f-1)]
+\\ky\brak{t}&=k\brak{x\brak{t}sin\brak{2\pi t}}
 \end{align}
 \\$\therefore$ satisfies principle of homogenity
 \\$\therefore$ it is linear
