@@ -27,7 +27,7 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-
+\usepackage{pgfplots}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -59,7 +59,7 @@
 \begin{figure}[h]
 \renewcommand\thefigure{1}
     \centering
-	\includegraphics[width=1\linewidth]{figs/figuree.png}
+    \includegraphics[width=1\linewidth]{figs/figuree.png}
     \caption{ }
     \label{fig:enter-label}
 \end{figure}
@@ -72,20 +72,37 @@
     \caption{input parameters}
     \label{tab:IN 14}
  \end{table}
-\\ From \tabref{tab:IN 14}
 \\ the circuit is a positive peak detector circuit  
 \begin{align}
-V_c\brak{t}&=V_{in}\brak{t}-V_{out}\brak{t}
+I_D&=I_S\brak{e^\frac{V_D}{V_T}-1}
 \end{align}
-\\as diode is ideal
-\\during positive half cycle of input signal it conducts allowing capacitor to charge to the peak voltage of input  
+At t=3ms; $V_D>0$
+\\$\therefore$ diode is forward biased
 \begin{align}
-V_{out}\brak{t}&=V_c\brak{t}
+\\V_{out}\brak{t}&=V_c\brak{t}
 \\&=1V
 \end{align}
-once the capacitor is charged to 1V it retains this voltage due to ideal diode's behaviour and open circuit condition.
-$\therefore$ at t=5ms
+After $t>3$ms; $V_D<0$
+\\$\therefore$ diode is reverse biased
+\\the capacitor voltage remains at 1V  
+\\$\therefore$ at t=5ms
 \begin{align}
-V_{out}&=1V
+V_{out}\brak{t}&=1V
 \end{align}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xmin=0,
+    xmax=8,
+    ymin=0,
+    ymax=2,
+    xlabel={$t\ (\text{ms})$},
+    ylabel={$V_{\text{out}}\ (\text{V})$},
+    xtick={0,0.5,1,2,3,4,5,6},
+    ytick={0,0.4,0.6,1},
+    ]
+    \addplot [black, thick, smooth] coordinates {(0,0)(0.5,0.4)(2,0.4)};    
+    \addplot [black, thick] coordinates {(2,0.4)(2.5,0.4)(3,1)(6,1)};  % Modified segment
+\end{axis}
+\end{tikzpicture}
 \end{document}
