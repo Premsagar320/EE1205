@@ -61,7 +61,6 @@
     \centering
     \includegraphics[width=1\linewidth]{figs/figuree.png}
     \caption{ }
-    \label{fig:enter-label}
 \end{figure}
 \\\textbf{Solution}:
 \begin{table}[!ht]
@@ -89,20 +88,10 @@ After $t>3$ms; $V_D<0$
 \begin{align}
 V_{out}\brak{t}&=1V
 \end{align}
-\begin{tikzpicture}
-\begin{axis}[
-    axis lines=middle,
-    xmin=0,
-    xmax=8,
-    ymin=0,
-    ymax=2,
-    xlabel={$t\ (\text{ms})$},
-    ylabel={$V_{\text{out}}\ (\text{V})$},
-    xtick={0,0.5,1,2,3,4,5,6},
-    ytick={0,0.4,0.6,1},
-    ]
-    \addplot [black, thick, smooth] coordinates {(0,0)(0.5,0.4)(2,0.4)};    
-    \addplot [black, thick] coordinates {(2,0.4)(2.5,0.4)(3,1)(6,1)};  % Modified segment
-\end{axis}
-\end{tikzpicture}
+\\\begin{figure}[h]
+\renewcommand\thefigure{1}
+    \centering
+    \includegraphics[width=1\linewidth]{figs/typo.png}
+    \caption{ }
+\end{figure}
 \end{document}
